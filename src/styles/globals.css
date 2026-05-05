@@ -43,7 +43,7 @@
     --info-foreground: 0 0% 100%;
 
     --warning: 38 94% 48%; /* #EC9907 — ubits-feedback-border-warning */
-    --warning-foreground: 0 0% 100%;
+    --warning-foreground: 207 14% 15%; /* Dark text for proper contrast on light orange */
 
     --success: 116 53% 37%; /* #328e2c — ubits-feedback-accent-success */
     --success-foreground: 0 0% 100%;
@@ -101,6 +101,10 @@
     /* #3b4350 — hover/active (ubits-bg-gray-subtle-hover) */
     --accent: 217 14% 27%;
     --accent-foreground: 210 6% 93%;
+
+    /* ── Warning ──────────────────────────────────────────── */
+    --warning: 38 94% 58%; /* Increased lightness for better contrast in dark mode */
+    --warning-foreground: 207 14% 15%; /* Dark text for orange background */
 
     /* ── Destructive ──────────────────────────────────────── */
     --destructive: 357 72% 42%;
