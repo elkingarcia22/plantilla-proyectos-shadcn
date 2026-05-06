@@ -69,7 +69,14 @@ export const PlaygroundSidebar: React.FC<SidebarProps> = ({
       </div>
 
       {/* Navigation Body */}
-      <div className="flex-1 flex flex-col items-center w-full overflow-y-auto no-scrollbar pt-2 px-4">
+      <div className="flex-1 flex flex-col items-center w-full overflow-y-auto pt-2 px-4 scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent hover:scrollbar-thumb-white/20">
+        <style dangerouslySetInnerHTML={{ __html: `
+          .no-scrollbar::-webkit-scrollbar { display: none; }
+          .scrollbar-thin::-webkit-scrollbar { width: 4px; }
+          .scrollbar-thin::-webkit-scrollbar-track { background: transparent; }
+          .scrollbar-thin::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.1); border-radius: 20px; }
+          .scrollbar-thin::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.2); }
+        `}} />
         {items.map((section) => (
           <div key={section.id} className="flex flex-col items-center w-full">
             {section.items.map(renderItem)}
