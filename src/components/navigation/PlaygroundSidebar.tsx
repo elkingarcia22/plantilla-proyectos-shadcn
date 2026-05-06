@@ -96,22 +96,22 @@ export const PlaygroundSidebar: React.FC<SidebarProps> = ({
         >
           <style dangerouslySetInnerHTML={{ __html: `
             .custom-sidebar-scroll::-webkit-scrollbar {
-              width: 3px;
+              width: 5px;
             }
             .custom-sidebar-scroll::-webkit-scrollbar-track {
               background: transparent;
             }
             .custom-sidebar-scroll::-webkit-scrollbar-thumb {
-              background: rgba(255, 255, 255, 0.05);
+              background: rgba(255, 255, 255, 0.2);
               border-radius: 10px;
             }
             .custom-sidebar-scroll::-webkit-scrollbar-thumb:hover {
-              background: rgba(255, 255, 255, 0.15);
+              background: rgba(255, 255, 255, 0.4);
             }
             /* Firefox alternative */
             .custom-sidebar-scroll {
               scrollbar-width: thin;
-              scrollbar-color: rgba(255, 255, 255, 0.05) transparent;
+              scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
             }
           `}} />
           
