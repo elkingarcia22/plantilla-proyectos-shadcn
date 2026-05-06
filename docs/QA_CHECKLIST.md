@@ -117,4 +117,12 @@
 - [x] Cero uso de HEX hardcoded y 0 rutas reales.
 - [x] Build exitoso y TS 0 errores.
 
+## Hotfix 8.6C.1: Playground Shell Demo Stabilization (Completada - 2026-05-06)
+- [x] Auditoría de Tokens: 0 HEX en archivos `.tsx`.
+- [x] Semántica: 0 `text-white` en archivos `.tsx`.
+- [x] Tipado: 0 `as any` en renderizado de íconos.
+- [x] Alineación: Sidebar y SubNav sincronizados a `16px` del tope.
+- [x] UX: Scrollbar personalizado en Sidebar (4px, premium style).
+- [x] Build exitoso y TypeScript 0 errores.
+
 ## Fase 8.6D: Home/List Template Patterns (Pendiente)

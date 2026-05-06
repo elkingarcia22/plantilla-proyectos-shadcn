@@ -5,11 +5,11 @@
   --color-brand-pressed: #223a91;
   
   /* Surfaces */
-  --color-bg-app: #EEF2FF;
+  --color-bg-app: #f8faff;
   --color-surface: #ffffff;
-  --color-surface-nav: #202837;
-  --color-surface-muted: #F3F3F4;
-  --color-surface-subtle: #f9fafb;
+  --color-surface-nav: #111827;
+  --color-surface-muted: #ebf1ff;
+  --color-surface-subtle: #f5f8ff;
   
   /* Typography */
   --color-text-primary: #303a47;
@@ -48,7 +48,7 @@
 
   /* --- HSL Channels for Opacity Support (Calculated from HEX) --- */
   --color-brand-hsl: 219 91% 49%;
-  --color-bg-app-hsl: 220 100% 97%;
+  --color-bg-app-hsl: 225 100% 98.5%;
   --color-surface-hsl: 0 0% 100%;
   --color-text-primary-hsl: 214 17% 23%;
   --color-text-secondary-hsl: 215 9% 40%;
@@ -57,7 +57,7 @@
   --color-positive-hsl: 116 53% 37%;
   --color-warning-hsl: 38 94% 48%;
   --color-info-hsl: 225 83% 61%;
-  --color-surface-muted-hsl: 240 4% 96%;
-  --color-surface-subtle-hsl: 210 20% 98%;
-  --color-surface-nav-hsl: 219 26% 17%;
+  --color-surface-muted-hsl: 222 100% 96%;
+  --color-surface-subtle-hsl: 225 100% 98%;
+  --color-surface-nav-hsl: 222 39% 11%;
 }

@@ -8,6 +8,7 @@ import {
   TooltipProvider,
 } from "@/components/ui/tooltip";
 import type { NavigationItem, NavigationSection } from "./navigationTypes";
+import type { IconName } from "@/icons";
 
 interface SidebarProps {
   items: NavigationSection[];
@@ -23,7 +24,8 @@ interface SidebarProps {
 
 /**
  * UBITS PREMIUM RAIL SIDEBAR
- * Refined icon colors using white/40 to match footer aesthetics and ensure visibility in all modes.
+ * Stabilized version for Hotfix 8.6C.1.
+ * Uses semantic tokens only: bg-nav, text-nav-foreground, bg-primary.
  */
 export const PlaygroundSidebar: React.FC<SidebarProps> = ({
   items,
@@ -49,12 +51,12 @@ export const PlaygroundSidebar: React.FC<SidebarProps> = ({
             className={cn(
               "relative flex items-center justify-center w-12 h-12 rounded-full transition-all duration-300 group outline-none",
               isActive 
-                ? "bg-[#0C5BEF] text-white shadow-lg shadow-brand/20 scale-110" 
-                : "text-white/40 hover:bg-white/10 hover:text-white"
+                ? "bg-primary text-primary-foreground shadow-lg shadow-brand/20 scale-110" 
+                : "text-nav-foreground/40 hover:bg-white/10 hover:text-nav-foreground"
             )}
           >
             <UbitsIcon 
-              name={item.icon as any} 
+              name={item.icon as IconName} 
               size="sm" 
               tone="inverse"
               className={cn(
@@ -63,7 +65,7 @@ export const PlaygroundSidebar: React.FC<SidebarProps> = ({
               )} 
             />
             {isActive && (
-              <div className="absolute -left-4 w-1 h-6 bg-[#0C5BEF] rounded-r-full shadow-[0_0_8px_rgba(12,91,239,0.5)]" />
+              <div className="absolute -left-4 w-1 h-6 bg-primary rounded-r-full shadow-[0_0_8px_rgba(var(--primary),0.5)]" />
             )}
           </button>
         </TooltipTrigger>
@@ -78,18 +80,18 @@ export const PlaygroundSidebar: React.FC<SidebarProps> = ({
     <TooltipProvider>
       <aside
         className={cn(
-          "fixed left-6 top-4 bottom-4 w-20 bg-[#111827] flex flex-col items-center py-8 rounded-[32px] shadow-2xl z-50 border border-white/5",
+          "fixed left-6 top-4 bottom-4 w-20 bg-nav flex flex-col items-center py-6 rounded-[32px] shadow-2xl z-50 border border-white/5",
           className
         )}
       >
         {/* Header / Logo */}
-        <div className="mb-12 flex-shrink-0">
+        <div className="mb-8 flex-shrink-0">
           {header}
         </div>
 
         {/* Navigation Body with Original Subtle Scrollbar */}
         <div 
-          className="flex-1 flex flex-col items-center w-full overflow-y-auto pt-2 px-4 space-y-8 custom-sidebar-scroll"
+          className="flex-1 flex flex-col items-center w-full overflow-y-auto pt-1 px-4 space-y-6 custom-sidebar-scroll"
         >
           <style dangerouslySetInnerHTML={{ __html: `
             .custom-sidebar-scroll::-webkit-scrollbar {
@@ -113,14 +115,14 @@ export const PlaygroundSidebar: React.FC<SidebarProps> = ({
           `}} />
           
           {items.map((section) => (
-            <div key={section.id} className="flex flex-col items-center w-full space-y-6">
+            <div key={section.id} className="flex flex-col items-center w-full space-y-4">
               {section.items.map(renderItem)}
             </div>
           ))}
         </div>
 
         {/* Footer / User Profile */}
-        <div className="mt-auto pt-8 flex-shrink-0">
+        <div className="mt-auto pt-6 flex-shrink-0">
           {footer}
         </div>
       </aside>

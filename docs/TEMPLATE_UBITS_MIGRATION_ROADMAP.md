@@ -15,6 +15,7 @@ Hoja de ruta ajustada para la implementación del **Playground Shell**, prioriza
 - **8.6C.2**: `UbitsSubNav` (Breadcrumbs integrados).
 - **8.6C.3**: `UbitsMobileTabBar` (Navegación móvil).
 - **8.6C.4**: Lógica de toggle de temas integrada en el shell.
+- **Hotfix 8.6C.1**: ✅ Estabilización de visuales y tokens (Aprobado).
 
 ### Fase 8.6D · Home/List Template (Prioridad Alta)
 *Meta: Crear el frame para pantallas de entrada (Entrypoints).*

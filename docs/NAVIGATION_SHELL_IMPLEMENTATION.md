@@ -33,8 +33,11 @@ Se establecieron interfaces estrictas para asegurar que cualquier configuración
 - **Tokens Only**: Prohibido el uso de HEX. Se utilizan clases de Tailwind mapeadas a `tokens.css`.
 - **Accessibility First**: Todos los componentes usan elementos semánticos (`nav`, `button`) y atributos ARIA.
 
-## Relación con Fase 8.6D
-Estos componentes actuarán como los bloques de construcción para el **Home/List Template**, donde se integrarán en un Layout con slots definidos.
+## Actualización Hotfix 8.6C.1 · Estabilización
+- **Auditoría de Tokens**: Se eliminaron todos los HEX del código TSX. Ahora se utilizan `--nav` y `--nav-foreground` para el Sidebar Rail.
+- **Limpieza de Tipos**: Se eliminaron los `as any` en el renderizado de iconos, utilizando el tipo `IconName` de forma estricta.
+- **Alineación Visual**: Se sincronizó la alineación vertical a `16px` del tope para el Sidebar y el SubNav.
+- **Aprobación de Base**: El Shell Demo queda aprobado como base técnica y visual para la construcción de los Home/List Templates en la Fase 8.6D.
 
 ---
-*Implementación de Navegación v1.0*
+*Implementación de Navegación v1.1 — Hotfix 8.6C.1 Stabilized*

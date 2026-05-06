@@ -161,4 +161,12 @@ Governance documents for first dashboard build:
 *Documento de arquitectura UBITS v3.0.0*
 *Última revisión: 2026-05-06*
 
-**Phase 8 Timeline:** 8.0 (✅) → 8.1 (✅) → 8.2 (✅) → 8.3 (✅) → 8.4 (✅) → 8.5 (✅) → 8.6 (8.6C ✅) → 9.0 (API)
+**Phase 8 Timeline:** 8.0 (✅) → 8.1 (✅) → 8.2 (✅) → 8.3 (✅) → 8.4 (✅) → 8.5 (✅) → 8.6 (8.6C ✅) → 8.6D (Blocked) → 9.0 (API)
+
+---
+
+### Navigation Shell Architecture (Phase 8.6C)
+- **Componentes**: `PlaygroundSidebar`, `UbitsSubNav`, `UbitsMobileTabBar`.
+- **Infrastructure**: `src/components/navigation/`.
+- **Estabilización**: Hotfix 8.6C.1 (Aprobado). 0 HEX en TSX, 0 text-white.
+- **Siguiente**: Fase 8.6D · Home/List Template Patterns (Bloqueada hasta cierre formal).

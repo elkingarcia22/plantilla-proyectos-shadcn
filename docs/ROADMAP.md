@@ -175,7 +175,8 @@
   - [ ] **Fase 8.5D:** Icon Assets Preparation (Bloqueado)
   - [x] **Fase 8.6A:** ✅ UBITS Template Component Gap Audit (Ajustado por Hotfix 8.6A.1)
   - [x] **Fase 8.6B:** ✅ Playground Shell Architecture (Completada)
-  - [x] **Fase 8.6C:** ✅ Playground Shell Navigation Components (Finalizado - 2026-05-06)
+  - [x] **Fase 8.6C:** ✅ Playground Shell Navigation Components (Completada)
+  - [x] **Hotfix 8.6C.1:** ✅ Playground Shell Demo Stabilization (Completada - 2026-05-06)
   - [ ] **Fase 8.6D:** Home/List Template Patterns (Siguiente)
 
 - [ ] **Fase 9: API Integration (Pendiente)**

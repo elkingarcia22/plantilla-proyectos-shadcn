@@ -1,5 +1,16 @@
 # Prompt Log - plantilla-proyectos-shadcn
 
+### 2026-05-06 - Hotfix 8.6C.1: Playground Shell Demo Stabilization (Completada)
+- **Status**: Finalizado
+- **Objetivo**: Estabilizar y auditar el Shell Demo (Sidebar + SubNav) eliminando deuda técnica visual y de tipos.
+- **Resultado**: 
+  - 0 HEX en archivos TSX (migración a tokens `--nav`).
+  - 0 `text-white` en archivos TSX (migración a `text-nav-foreground`).
+  - 0 `as any` en renderizado de íconos (tipado estricto `IconName`).
+  - Sincronización de alineación vertical a `16px`.
+- **Gobernanza**: Diseño 100% tokenizado y validado.
+- **Siguiente**: Fase 8.6D · Home/List Template Patterns.
+
 ### 2026-05-06 - Fase 8.6C: Navigation Shell Components (Completada)
 - **Status**: Finalizado
 - **Objetivo**: Construir componentes base de navegación (Sidebar, SubNav, TabBar).

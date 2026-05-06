@@ -83,8 +83,8 @@
 - **8.6B Architecture: Playground Shell Slot Contracts**
 - **Status**: ✅ Finalizado
 - **8.6C Navigation: Shell Components (Sidebar, SubNav, TabBar)**
-- **Status**: ✅ Finalizado
-- **Acción**: Proceder con Home/List Template en 8.6D.
+- **Status**: ✅ Finalizado con Hotfix 8.6C.1 (Stabilized)
+- **Acción**: Shell Demo aprobado. Proceder con Home/List Template en 8.6D.
 
 - **8.5C**: Icon Migration Decision Gate (✅ 2026-05-06)
 - **8.5D**: Icon Assets Preparation (Bloqueada - Requiere Assets)

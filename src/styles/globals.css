@@ -97,11 +97,16 @@
     --success: 116 53% 37%; /* #328e2c — ubits-feedback-accent-success */
     --success-foreground: 0 0% 100%;
 
+    --nav: var(--color-surface-nav-hsl);
+    --nav-foreground: var(--color-text-inverse-hsl);
+
     --border: var(--color-border-hsl);
     --input: var(--color-border-hsl);
     --ring: var(--color-brand-hsl);
     
     --radius: var(--radius-md);
+    --nav: var(--color-surface-nav-hsl);
+    --nav-foreground: var(--color-text-inverse-hsl);
   }
 
   .dark {
@@ -111,21 +116,22 @@
     --color-text-secondary: #9aa0aa;  /* ubits fg-1-medium dark, paso intermedio */
     --color-text-muted: #6b7480;      /* reducido para hint/placeholder */
     --color-text-inverse: #303a47;
-    --color-bg-app: #0E1825;
-    --color-surface: #202837;
-    --color-surface-muted: #1e2a38;   /* recessed, más oscuro que card */
+    --color-bg-app: #020617;
+    --color-surface: #0f172a;
+    --color-surface-muted: #1e293b;
+    /* recessed, más oscuro que card */
     --color-surface-subtle: #192230;
     --color-border: #3d4555;
     --color-border-strong: #4f5561;
 
     /* ── Superficies ─────────────────────────────────────── */
-    /* #0E1825 — pantalla base (ubits-bg-2) */
-    --background: 207 45% 10%;
-    /* #edeeef — texto principal (ubits-fg-1-high) */
+    /* #020617 — pantalla base */
+    --background: 222 47% 5%;
+    /* #edeeef — texto principal */
     --foreground: 210 6% 93%;
 
-    /* #202837 — contenedores/cards (ubits-bg-1) */
-    --card: 219 26% 17%;
+    /* #0f172a — contenedores/cards */
+    --card: 222 47% 11%;
     --card-foreground: 210 6% 93%;
 
     /* #26303f — popovers/dropdowns flotan sobre cards */
@@ -138,17 +144,17 @@
     --primary-foreground: 0 0% 100%;
 
     /* ── Secundario / Muted / Accent ─────────────────────── */
-    /* #293242 — superficie secundaria, apenas sobre card */
-    --secondary: 219 22% 21%;
+    /* #1e293b — superficie secundaria */
+    --secondary: 222 47% 15%;
     --secondary-foreground: 210 6% 93%;
 
-    /* #222d3c — superficie muted (recessed, ej. skeleton, tabs bg) */
-    --muted: 219 28% 18%;
-    /* #8d9299 — texto secundario/placeholder, jerarquía clara vs primario */
+    /* #151c2e — superficie muted */
+    --muted: 222 47% 12%;
+    /* #8d9299 — texto secundario/placeholder */
     --muted-foreground: 220 4% 57%;
 
-    /* #3b4350 — hover/active (ubits-bg-gray-subtle-hover) */
-    --accent: 217 14% 27%;
+    /* #2a3449 — hover/active */
+    --accent: 222 47% 20%;
     --accent-foreground: 210 6% 93%;
 
     /* ── Warning ──────────────────────────────────────────── */
@@ -165,5 +171,7 @@
     /* #404754 — input border ligeramente más oscuro (ubits-border-2) */
     --input: 221 14% 28%;
     --ring: 222 91% 58%;
+    --nav: var(--color-surface-nav-hsl);
+    --nav-foreground: var(--color-text-inverse-hsl);
   }
 }
