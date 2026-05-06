@@ -23,7 +23,7 @@ interface SidebarProps {
 
 /**
  * UBITS PREMIUM RAIL SIDEBAR
- * A fixed 80px wide navigation rail with custom styled minimalist scrollbar.
+ * Fixed dark sidebar with forced white/light icon colors for maximum contrast.
  */
 export const PlaygroundSidebar: React.FC<SidebarProps> = ({
   items,
@@ -49,8 +49,8 @@ export const PlaygroundSidebar: React.FC<SidebarProps> = ({
             className={cn(
               "relative flex items-center justify-center w-12 h-12 rounded-full transition-all duration-300 group outline-none",
               isActive 
-                ? "bg-brand text-white shadow-lg shadow-brand/20 scale-110" 
-                : "text-slate-400 hover:bg-white/5 hover:text-white"
+                ? "bg-[#0C5BEF] text-white shadow-lg shadow-brand/20 scale-110" 
+                : "text-white/40 hover:bg-white/5 hover:text-white"
             )}
           >
             <UbitsIcon 
@@ -58,11 +58,11 @@ export const PlaygroundSidebar: React.FC<SidebarProps> = ({
               size="sm" 
               className={cn(
                 "transition-transform duration-300",
-                isActive ? "scale-110" : "group-hover:scale-110"
+                isActive ? "scale-110 text-white" : "group-hover:scale-110"
               )} 
             />
             {isActive && (
-              <div className="absolute -left-4 w-1 h-6 bg-brand rounded-r-full shadow-[0_0_8px_rgba(12,91,239,0.5)]" />
+              <div className="absolute -left-4 w-1 h-6 bg-[#0C5BEF] rounded-r-full shadow-[0_0_8px_rgba(12,91,239,0.5)]" />
             )}
           </button>
         </TooltipTrigger>
@@ -77,7 +77,7 @@ export const PlaygroundSidebar: React.FC<SidebarProps> = ({
     <TooltipProvider>
       <aside
         className={cn(
-          "fixed left-6 top-4 bottom-4 w-20 bg-[#111827] text-white flex flex-col items-center py-8 rounded-[32px] shadow-2xl z-50 border border-white/5",
+          "fixed left-6 top-4 bottom-4 w-20 bg-[#111827] flex flex-col items-center py-8 rounded-[32px] shadow-2xl z-50 border border-white/5",
           className
         )}
       >
